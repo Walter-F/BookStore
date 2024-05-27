@@ -17,7 +17,7 @@ namespace BookStore.Application.Services
             return await _booksRepository.Get();
         }
 
-        public async Task<Guid> CreatelBook(Book book)
+        public async Task<Guid> CreateBook(Book book)
         {
             return await _booksRepository.Create(book);
         }

@@ -40,7 +40,7 @@ namespace BookStore.Controllers
                 return BadRequest(error);
             }
 
-            var bookId = await _bookService.CreatelBook(book);
+            var bookId = await _bookService.CreateBook(book);
 
             return Ok(bookId);
         }
